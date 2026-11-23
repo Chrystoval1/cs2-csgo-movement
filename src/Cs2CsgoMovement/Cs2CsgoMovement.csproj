@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>Cs2CsgoMovement</RootNamespace>
+    <AssemblyName>Cs2CsgoMovement</AssemblyName>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Provides BasePlugin, Server, listeners and commands.
+         Pinned for reproducible builds; bump it to match the CounterStrikeSharp
+         runtime installed on your server. https://github.com/roflmuffin/CounterStrikeSharp -->
+    <PackageReference Include="CounterStrikeSharp.API" Version="1.0.368" />
+  </ItemGroup>
+
+</Project>
